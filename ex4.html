@@ -1,0 +1,281 @@
+<!-- 1
+<!DOCTYPE html>     
+<html lang="en" dir="ltr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>CSS Selector and CSS Posittioning</Select></title>
+        <style type="text/css">
+            .tst1 {text-align: center;}
+        </style> 
+    </head> 
+    <body> 
+        <div> 
+            <h1 class="tst1">The h1 text-align set to center.</h1> 
+            <h2>The h2 text-align set to center.</h2> 
+            <h3>The h3 text-align set to left.</h3> 
+            <p calss="tst1">The p text-align set to center.</p> 
+        </div> 
+    </body> 
+</html>  
+-->
+
+
+
+<!-- 2
+<!DOCTYPE html>     
+<html lang="en" dir="ltr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>CSS Selector and CSS Posittioning</Select></title>
+        <style type="text/css">
+            h3 {text-align: left;} 
+            p, h1, h2 {text-align: center;} 
+        </style> 
+    </head> 
+    <body> 
+        <div> 
+            <h1 class="tst1">The h1 text-align set to center.</h1> 
+            <h2>The h2 text-align set to center.</h2> 
+            <h3>The h3 text-align set to left.</h3> 
+            <p calss="tst1">The p text-align set to center.</p> 
+        </div> 
+    </body> 
+</html> 
+-->
+
+
+
+<!-- 3
+!  id----unique
+   class----not unique
+<!DOCTYPE html>     
+<html lang="en" dir="ltr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>CSS Selector and CSS Posittioning</Select></title>
+        <style type="text/css">
+            #tst1 {text-align: center;}
+            h1#tst1 {color: red;}
+        </style> 
+    </head> 
+    <body> 
+        <div> 
+            <h1 id="tst1">The h1 text-align set to center.</h1> 
+            <h2 id="tst1">The h2 text-align set to center.</h2> 
+            <h3>The h3 text-align set to left.</h3> 
+            <p>The p text-align set to center.</p> 
+        </div> 
+    </body> 
+</html>   
+-->
+
+
+<!-- 4
+<!DOCTYPE html>     
+<html lang="en" dir="ltr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>CSS Selector and CSS Posittioning</Select></title>
+        <style type="text/css">
+            *{color: red;} 
+        </style> 
+    </head> 
+    <body> 
+        <div> 
+            <h1 id="tst1">The h1 text-align set to center.</h1> 
+            <h2 id="tst1">The h2 text-align set to center.</h2> 
+            <h3>The h3 text-align set to left.</h3> 
+            <p>The p text-align set to center.</p> 
+        </div> 
+    </body> 
+</html>    
+-->
+
+
+
+<!-- 5
+<!DOCTYPE html>     
+<html lang="en" dir="ltr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>CSS Selector and CSS Posittioning</Select></title>
+        <style type="text/css">
+            div strong {color: red;}
+        </style> 
+    </head> 
+    <body> 
+        <div> 
+            <h1 id="tst1">The h1 text-align set to center.</h1> 
+            <h2 id="tst1">The h2 text-align set to center.</h2> 
+            <h3>The h3 text-align set to left.</h3> 
+            <div><p>The red style <strong>has been applied to this element.</strong></p></div> 
+            <p>The red style <strong>has not been applied to this element.</strong></p>
+        </div> 
+    </body> 
+</html>    
+-->
+
+
+<!-- 
+    <!DOCTYPE html>     
+<html lang="en" dir="ltr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>CSS Selector and CSS Posittioning</Select></title>
+        <style type="text/css">
+            a:link {color: green;}
+            a:visited {color: red;}
+            p:hover {color: red;}
+        </style> 
+    </head> 
+    <body> 
+        <div>
+          <h1 id="tst1">The h1 text-align set to center.</h1> 
+          <h2 id="tst1">The h2 text-align set to center.</h2> 
+          <h3>The h3 text-align set to left.</h3> 
+          <p>The <p></p> text-align set to left.</p>
+          <div><p>The red style <strong>has been applied to this element.</strong></p></div> 
+          <p>The red style <strong>has not been applied to this element.</strong></p>
+          <a href="http://by.cuc.edu.cn/">visit cuc web</a>
+        </div>
+    </body> 
+</html>    
+-->
+
+
+
+<!-- 
+<!DOCTYPE html>     
+<html lang="en" dir="ltr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>CSS Selector and CSS Posittioning</Select></title>
+        <style type="text/css">
+            a:link {color: green;}
+            a:visited {color: red;}
+            p:hover {color: red;}
+
+            .box1 {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+
+            .box2 {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                border: yellow solid;
+                position: relative;
+                left: 20px;
+                top: 20px;
+            }
+
+            .box3 {
+                width: 100px;
+                height: 100px;
+                background-color: blueviolet;
+            }
+
+            .box4 {
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+            }
+        </style> 
+    </head> 
+    <body> 
+        <h1 id="tst1">The h1 text-align set to center.</h1> 
+        <h2 id="tst1">The h2 text-align set to center.</h2> 
+        <h3>The h3 text-align set to left.</h3> 
+        <p>The <p></p> text-align set to left.</p>
+        <div><p>The red style <strong>has been applied to this element.</strong></p></div> 
+        <p>The red style <strong>has not been applied to this element.</strong></p>
+        <a href="http://by.cuc.edu.cn/">visit cuc web</a>
+
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+
+    </body> 
+</html>    
+-->
+
+
+
+
+<!DOCTYPE html>     
+<html lang="en" dir="ltr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>CSS Selector and CSS Posittioning</Select></title>
+        <style type="text/css">
+            a:link {color: green;}
+            a:visited {color: red;}
+            p:hover {color: red;}
+
+            body {
+                margin: 20px;
+                border: solid 1px black;
+            }
+
+            .container {
+                position: relative;
+                margin: 30px;
+                border: solid 1px orange;
+                padding: 10px;
+            }
+
+            .box1 {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+
+            .box2 {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                border: yellow solid;
+                position: relative;
+                left: 20px;
+                top: 20px;
+            }
+
+            .box3 {
+                width: 100px;
+                height: 100px;
+                background-color: blueviolet;
+            }
+
+            .box4 {
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+            }
+        </style> 
+    </head> 
+    <body> 
+        <h1 id="tst1">The h1 text-align set to center.</h1> 
+        <h2 id="tst1">The h2 text-align set to center.</h2> 
+        <h3>The h3 text-align set to left.</h3> 
+        <p>The <p></p> text-align set to left.</p>
+        <div><p>The red style <strong>has been applied to this element.</strong></p></div> 
+        <p>The red style <strong>has not been applied to this element.</strong></p>
+        <a href="http://by.cuc.edu.cn/">visit cuc web</a>
+
+        <div class="container">
+
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <div class="box3"></div>
+          <div class="box4"></div>
+          
+        </div>
+
+    </body> 
+</html> 
+
+
+
